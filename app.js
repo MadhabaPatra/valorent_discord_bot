@@ -1,7 +1,3 @@
-var express = require('express');
-var app = express();
-
-
 const Discord=require("discord.js")
 const fs=require("fs")
 const bot=new Discord.Client()
@@ -55,10 +51,4 @@ bot.on("message",msg =>{
 
 bot.login(token)
 
-var PORT=process.env.PORT || 9000;
 
-app.get('/', function (req, res) {
-   console.log('working');
-     
-})
-app.listen(PORT);
